@@ -5,6 +5,7 @@ const nextConfig = {
   swcMinify: false,
   output: 'export',
   trailingSlash: true,
+  distDir: 'out',
   webpack: (config) => {
     config.resolve.fallback = { fs: false };
     return config;
